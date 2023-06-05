@@ -1,0 +1,21 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    ".eslintignore": true,
+    ".eslintrc": true,
+    ".gitignore": true,
+    ".idea": true,
+    "dist": true,
+    ".prettierignore": true,
+    ".prettierrc": true,
+    "index.html": false,
+    "node_modules": true,
+    "package-lock.json": true,
+    "package.json": true,
+    "public": false,
+    "src/vite-env.d.ts": true,
+    "tsconfig.json": true,
+    "tsconfig.node.json": true,
+    "vite.config.ts": true,
+  }
+}
