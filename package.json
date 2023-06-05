@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "clsx": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -33,8 +34,13 @@
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   },
+  "homepage": "https://metrikspacex.github.io/3-column-preview-card-component",
   "name": "3-column-preview-card-component",
   "private": true,
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/metrikspacex/3-column-preview-card-component"
+  },
   "scripts": {
     "build": "tsc && vite build",
     "dev": "vite",

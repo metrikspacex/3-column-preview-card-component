@@ -1,0 +1,59 @@
+* {
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root,
+:root[data-theme="dark"],
+:root[data-theme="light"] {
+  // Colors
+  --primary-100: #fff;
+  --primary-200: #f2f2f2;
+  --primary-300: #ffd473;
+  --primary-400: #26b5c0;
+  --primary-500: #19b89d;
+  --primary-600: #e28625;
+  --primary-700: #006971;
+  --primary-800: #004140;
+  --primary-900: #000;
+
+  // Fonts
+  --ff-cursive: "Big Shoulders Display", cursive;
+  --ff-sans-serif: "Lexend Deca", sans-serif;
+  --fs: 10px;
+
+  // Settings
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--primary-200);
+  color: var(--primary-900);
+  font-family: var(--ff-sans-serif);
+  font-size: 10px;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+}
+
+body {
+  & > div#root {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+}
+
+.ff-cursive {
+  font-family: Big Shoulders Display, cursive;
+  font-weight: 700;
+}
+
+.ff-sans-serif {
+  font-family: Lexend Deca, sans-serif;
+  font-weight: 400;
+}

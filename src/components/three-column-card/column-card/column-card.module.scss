@@ -1,0 +1,95 @@
+div.column {
+  padding-block: 4.8rem;
+  padding-inline: 4.75rem;
+  &:first-of-type {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: var(--column-border-radius, 0.8rem);
+    border-top-right-radius: var(--column-border-radius, 0.8rem);
+
+    @media (width > 950px) {
+      border-top-left-radius: var(--column-border-radius, 0.8rem);
+      border-top-right-radius: 0;
+      border-bottom-left-radius: var(--column-border-radius, 0.8rem);
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &:last-of-type {
+    background-color: var(--column-3-bg, #004140);
+    border-bottom-left-radius: var(--column-border-radius, 0.8rem);
+    border-bottom-right-radius: var(--column-border-radius, 0.8rem);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    @media (width > 950px) {
+      border-top-left-radius: 0;
+      border-top-right-radius: var(--column-border-radius, 0.8rem);
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: var(--column-border-radius, 0.8rem);
+    }
+  }
+}
+
+img.column-image {
+  display: block;
+  margin-bottom: 3.5rem;
+  height: 4rem;
+  width: 6.4rem;
+  @media (width > 950px) {
+  }
+}
+
+h1.column-heading {
+  color: var(--primary-200);
+  font-family: var(--ff-cursive);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.8rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  @media (width > 950px) {
+  }
+}
+
+p.column-text {
+  color: var(--primary-100);
+  font-family: var(--ff-sans-serif);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+  max-width: 23.1rem;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  @media (width > 950px) {
+    max-width: 21.2rem;
+    margin-bottom: 8.3rem;
+  }
+}
+
+button.column-button {
+  background: var(--primary-200);
+  border-radius: 2.5rem;
+  border: 0;
+  color: var(--primary-700);
+  font-family: var(--ff-sans-serif);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  height: 4.8rem;
+  line-height: 2.5rem;
+  outline: 0;
+  width: 14.8rem;
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
+    color: var(--primary-100);
+    border: 2px solid var(--primary-100);
+    outline: 0;
+    cursor: pointer;
+  }
+}
